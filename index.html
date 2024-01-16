@@ -24,23 +24,21 @@
 
 }
      #logo {
-margin-top: 16px;   
+margin-top: 30px;   
 margin-left: 40px;
 width: 204px;
 height: 27px;
 }
 #GenlabText {
-    float: right;
-    margin-right: 934px;
-    margin-top: -27px;
-    color: #FFFFFF;
-    width: 102px;
+    margin-top: 10%;
+    justify-content: center;
+    color: orange;
+ 
     height: 27px;
-  
-
+    font-size: 27PX;
+    font-weight: bold;
+    margin-left: 29%;
 }
-
-
 
 .BTIMG {
     
@@ -53,6 +51,7 @@ height: 27px;
     margin: 20px;
     float: right;
     margin-right: 36px;
+    margin-top: 120px;
     /* margin-left: 334px;
     margin-top: 16px;
     margin-right: -185px; */
@@ -67,7 +66,7 @@ height: 27px;
     padding: 40px;
     margin: 20px;
     float: left;
-    margin-left: 33%;
+    margin-left: 52%;
 
 }
 .BTIMG_BT_GPT {
@@ -79,7 +78,7 @@ height: 27px;
     border: whitesmoke;
     padding: 40px;
     margin: 20px;
-    margin-left: 32%;
+    margin-left: 52%;
 }
 .BTIMG_BT_COP{
     border-radius: 60px;
@@ -89,7 +88,7 @@ height: 27px;
     border: whitesmoke;
     padding: 40px;
     margin: 20px;
-    margin-left: 32%;
+    margin-left: 52%;
     /* float: left;
     margin-left: 424px;
     margin-top: 56px;
@@ -158,7 +157,7 @@ height: 27px;
     display: block;
     width: 150px;
     height: 35px;
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 .BTimageText_BT_Gemi{
     margin-top: 38px;
@@ -166,7 +165,7 @@ height: 27px;
     display: block;
     width: 150px;
     height: 35px;
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 .BTimageText_GPT{
     margin-top: 4px;
@@ -174,7 +173,7 @@ height: 27px;
     display: block;
     width: 150px;
     height: 35px;
-    font-weight: bold;
+    /* font-weight: bold; */
 
 }
 .BTimageText_PILOT{
@@ -213,20 +212,21 @@ height: 27px;
   height: 170px; /* Should be removed. Only for demonstration */
 }
 .BillText{
-    margin-left: 17%;
-    margin-top: -6px;
-    font-size: 16px;
+    margin-left: 22%;
+    margin-top: 35px;
+    font-size: 20px;
     letter-spacing: 0px;
     color: #FFFFFF;
     opacity: 1;
 
+
 }
 .BillTextNext{
-    margin-left: 32%;
-    font-size: 16px;
+    margin-left: 38%;
     letter-spacing: 0px;
     color: #FFFFFF;
     opacity: 1;
+    font-size: 20px;
 }
 .Button_BT{
     border-radius: 17px;
@@ -245,10 +245,10 @@ height: 27px;
 }
 .vl {
     float: right;
-    margin-top: -27px;
-    margin-right: 1067px;
+    margin-right: 328px;
+     margin-top: -24px;
     border-left: 2px solid #90BBFF;
-    height: 18px;
+    height: 23px;
 }
 hr.new1 {
   border-top: 1px solid rgb(78, 74, 74);
@@ -270,15 +270,41 @@ a:hover::after {
   bottom: 0;
   border: 0.5px solid #007bff;
 }
+ul {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+}
+
 </style>
 </head>
 <body>
-  <div style="width: 100%;">
+  <div style="width: 100%;height: 100dvh;">
 
- 
     
-        <div style="background-color: #21318A; width: 100%; height: 250px;"> 
-            <div>
+        <div style="background-color: #21318A; width: 100%; height: 50dvh;"> 
+
+
+            <div class="row">
+                <div class="col-5">
+                    <div class="row">
+                      <div clas="col-4">
+                        <img src="./Images/Group 32.png" alt="Iopex" width="204" height="27" id="logo">
+                      </div>
+                      <!-- <div clas="col-4">
+                        <div class="vl"></div>
+                      </div> -->
+                      <div clas="col-4">
+                      
+                      </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <label for="fname" id="GenlabText">GenAI Labs</label>
+                </div>
+                <div class="col-5"></div>
+            </div>
+            <!-- <div>
                 <div>
                     <img src="./Images/Group 32.png" alt="Iopex" width="204" height="27" id="logo">
                 </div>
@@ -289,7 +315,7 @@ a:hover::after {
                     <label for="fname" id="GenlabText">GenAI Labs</label>
                 </div>
                 
-            </div> 
+            </div>  -->
            
             <div class="row">
                 <div class="col-2"></div>
@@ -340,24 +366,26 @@ a:hover::after {
                 
             </div>
             <div class="row">
-                <div class="col-2"></div>
-                <div class="col-8 h-100 d-flex align-items-center justify-content-center">
+                <div class="col-1"></div>
+                <div class="col-20 h-100 d-flex align-items-center justify-content-center">
                     <div>
-                        <label class="BillText" >Bill Gates, Microsoft Co-Founder: “Generative AI has the potential to change the</label>
-                        <label class="BillTextNext" > world in ways that we can't even imagine.</label>
+                        <marquee width="100%" behavior="scroll" style="width: 100%;" scrollamount='15' onmouseover='this.stop()' onmouseout='this.start()'>  
+                            <label class="BillText" >Bill Gates, Microsoft Co-Founder: “Generative AI has the potential to change the world in ways that we can't even imagine.</label>
+                       </marquee>  
+                        
                      </div>
                 </div>
-                <div class="col-2"></div>
+                <div class="col-1"></div>
                
             </div>
          
            </div>
         
-           <div style="background-color:#EFEFEF; width:100%; height: 392px;">  
+           <div style="background-color:#EFEFEF; width:100%; height: 50dvh;">  
 
-            <div class="row">
+            <div class="row" >
                 <div class="col-3"></div>
-                   <div class="col-2">
+                   <div class="col-2" style="margin-top: 20PX;">
                     <div class="BTIMG_BT">
                         <div>
                         <img src="./Images/Gemini_language_model_logo.png" alt="Iopex" class="BTimage_BT_Gimi">
@@ -368,7 +396,7 @@ a:hover::after {
                    </div>
                    </div>
                       
-                   <div class="col-2">
+                   <div class="col-2" style="margin-top: 20PX;">
                     <div class="BTIMG_BT_GPT">
                         <div>
                         <img src="./Images/Group 292.png" alt="Iopex" class="BTimage_BT">
@@ -378,9 +406,9 @@ a:hover::after {
                         </div>
                     </div>
                    </div>
-                   <div class="col-2">
+                   <div class="col-2" style="margin-top: 20PX;">
                    
-                    <div class="BTIMG_BT_COP">
+                    <div class="BTIMG_BT_COP" >
                         <div>
                         <img src="./Images/Microsoft-Copilot-Logo.png" alt="Iopex" class="BTimage_BT">
                         <label  class="BTimageText_BT">Getting started with </label>
@@ -394,27 +422,45 @@ a:hover::after {
                    
             </div>
 
-            <div class="container">
                 <div class="row">
                   <div class="col-sm-8">
-                    <div style="margin-left: -13%; margin-top: -8px;">
-                        <label ><h3>Interesting Resources</h3></label>
-                        <ul>
-                            <li><a href="https://huggingface.co/">Huggingface - The AI Community</a></li>
-                            <li><a href="https://mistral.ai/">Mixtral - Open-Weight AI Model</a></li>
-                            <li><a href="https://platform.openai.com/docs/models/gpt-3-5">GPT 3.5 - Older Version of GPT</a></li>
-                            <li><a href="https://platform.openai.com/docs/models/gpt-4-and-gpt-4-turbo">GPT 4 & Turbo</a></li>
-                            <li><a href="https://lmsys.org/blog/2023-03-30-vicuna/">Vicuna - An Open-Source Chatbo</a></li>
-                            
-                          </ul>
-                        
-                    </div>
 
-                  </div><div class="col-sm-1" style="margin-top:10%; float: right;"></div>
-                  <div class="col-sm-3" style="margin-top:11%; float: right;">© 2023-2024 iOPEX Technologies. 
+                    <div clss="row">
+                        <div class="col-sm-4">
+                            <div style="margin-left: 3%;">
+                                <label ><h3>Interesting Resources</h3></label>
+                                <ul>
+                                    <li style="width: auto;"><a href="https://huggingface.co/">Huggingface - The AI Community</a></li>
+                                    <li><a href="https://mistral.ai/news/mixtral-of-experts/">Mixtral of Experts</a></li>
+                                    <li><a href="https://platform.openai.com/docs/models/gpt-3-5">GPT 3.5</a></li>
+                                    <li><a href="https://platform.openai.com/docs/models/gpt-4-and-gpt-4-turbo">GPT 4 & Turbo</a></li>
+                                    <li><a href="https://lmsys.org/blog/2023-03-30-vicuna/">Vicuna</a></li>
+                                    
+
+                                    <li><a href="https://www.tabnine.com/">Code Generator which is aligned with all IDE's</a></li>
+                                    <li><a href="https://mistral.ai/news/mixtral-of-experts/">Mixtral of Experts</a></li>
+                                    <li><a href="https://platform.openai.com/docs/models/gpt-3-5">GPT 3.5</a></li>
+                                    <li><a href="https://platform.openai.com/docs/models/gpt-4-and-gpt-4-turbo">GPT 4 & Turbo</a></li>
+                                    <li><a href="https://lmsys.org/blog/2023-03-30-vicuna/">Vicuna</a></li>
+                                  </ul>
+                                
+                            </div>
+
+                        </div>
+                        
+                        <div class="col-sm-3">
+
+                        </div>
+
+                    </div>
+                    
+
+                  </div>
+                  <div class="col-sm-1" style="margin-top:10%; float: right;"></div>
+                  <div class="col-sm-3" style="margin-top:9%; float: right;">© 2023-2024 iOPEX Technologies. 
                 </div>
                 </div>
-            </div>
+            
 
         
             
